@@ -1,0 +1,8 @@
+body{
+    background-color: darkblue;
+}
+.parent-container {
+    width: 600px;
+    height: 600px;
+    background-color: #91E9F5;
+}
