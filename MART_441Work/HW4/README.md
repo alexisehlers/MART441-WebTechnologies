@@ -1,0 +1,2 @@
+# 441 ReadMe Week 4
+While I did enjoy this project, and had fun with it, I ran out of time and couldn't complete it properly to the best of my ability. It was challenging to try to figure out how to update my style and images, and I think I almost had it. Additionally, it was nice to build on what we learned last week and continue the story. Some successes I had was making the code work for my use, and a challenge I had was adding more choices to meet the quota of 5. Additionally, I would like to add a restart button. 

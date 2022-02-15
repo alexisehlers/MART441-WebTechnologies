@@ -1,0 +1,98 @@
+<html>
+    <style>
+        body{
+            background-color: azure;
+        }
+    </style>
+    <script>
+        function getChoice1()
+        {
+            var myChoice = document.getElementById("choice").value;
+            var myQuestion = document.getElementById("question");
+            if(myChoice === "North")
+            {
+                document.getElementById("choice").style.display="none";
+                document.getElementById("btnSubmit").style.display="none";
+
+                document.getElementById("choice2").style.display="block";
+                document.getElementById("btnSubmit2").style.display="block";
+
+
+                myQuestion.innerHTML = "North is an awesome choice. Would you like to look for some delicious flowers while you fly?";
+            }
+            else if(myChoice === "South")
+            {
+                document.getElementById("choice").style.display="none";
+                document.getElementById("btnSubmit").style.display="none";
+
+                document.getElementById("choice3").style.display="block";
+                document.getElementById("btnSubmit3").style.display="block";
+                myQuestion.innerHTML = "South is a good call. Do you want to try and make some new friends along the way?";
+
+            }
+            else
+            {
+                myQuestion.innerHTML = "Invalid answer";
+            }
+
+        }
+        function getChoice2()
+        {
+            var answer = document.getElementById("choice2").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "yes")
+            {
+                document.getElementById("mainImage").src = "./images/food.jpg"
+                myQuestion.innerHTML = "Good call. Nectar is delicious, I must say.";
+            }
+            else if(answer === "no")
+            {
+                myQuestion.innerHTML = "You have to eat to keep your strength up!";
+            }
+        }
+
+        function getChoice3()
+        {
+            var answer = document.getElementById("choice3").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "yes")
+            {
+                document.getElementById("mainImage").src = "./images/friends.png"
+                myQuestion.innerHTML = "Good friends are hard to come by, and rare to find. Lucky!";
+            }
+            else if(answer === "no")
+            {
+                myQuestion.innerHTML = "Lonely is the lone traveler.";
+            }
+
+        }
+    </script>
+    <body>
+
+        <h1>The Adventures of Flutterby the Butterfly</h1>
+        <br>
+        <img src="./images/flutterby.jpg" id="mainImage">
+    <div id="question">
+    <br>
+      Flutterby the butterfly had wandered long and far, but she realized something was missing. She didn't know what the word meant, but her friend the Ladybug told her she was lonely.
+        <br>
+        One day, Flutterby felt the urge to fly far far away. She looked right and left, but wasnt sure where to go.
+        <br>
+        Flutterby finally decided she had two choices. North or South.
+    </div>
+
+        <br>
+
+        <input type="text" size="45" id="choice" value="Please enter North or South">
+        <button id="btnSubmit" onclick="getChoice1();">Click to continue</button>
+
+        <input type="text" size="45" id="choice2" value="Enter yes or no." style="display:none">
+        <button id="btnSubmit2" onclick="getChoice2();"  style="display:none">Click to continue</button>
+
+        <input type="text" size="45" id="choice3" value="Enter yes or no."  style="display:none">
+        <button id="btnSubmit3" onclick="getChoice3();" style="display:none">Click to continue</button>
+
+
+    </body>
+
+</html>
