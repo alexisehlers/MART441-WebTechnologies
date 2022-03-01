@@ -1,0 +1,33 @@
+body{
+    background-color: lightpink;
+}
+
+.divTable{
+	display: table;
+	width: 80%;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	background-color: #C3EFF5;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	border: 3px solid #68328A;
+	display: table-cell;
+	padding: 2px 8px;
+}
+.divTableHeading {
+	background-color: #C3EFF5;
+	display: table-header-group;
+	font-weight: italic;
+}
+.divTableFoot {
+	background-color: #C3EFF5;
+	display: table-footer-group;
+	font-weight: italic;
+}
+.divTableBody {
+	display: table-row-group;
+}
